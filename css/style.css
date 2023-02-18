@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.quize-app{
+  margin: 20px auto;
+  width: 800px;
+  background-color: #F6F6F6;
+  padding: 15px;
+}
+.quize-app .quize-info{
+  display: flex;
+  padding: 20px;
+  background-color: #FFF;
+}
+.quize-app .quize-info .category{
+  flex: 1;
+} 
+.quize-app .quize-info .count{
+  flex: 1;
+  text-align: right;
+} 
+.quize-app .quize-area{
+  background-color: #FFF;
+  padding: 20px;
+  margin-top: 15px;
+}
+.quize-app .answer-area{
+  padding:0 20px 20px;
+  background-color: #FFF;
+}
+.quize-app .answer-area .answer{
+  background-color: #F9F9F9;
+  padding: 15px;
+}
+.quize-app .answer-area .answer:not(:last-child){
+  border-bottom: 1px solid #DFDFDF;
+}
+.quize-app .answer-area .answer input[type="radio"]:checked + label {
+  color: #0075FF;
+}
+.quize-app .answer-area .answer label{
+  cursor: pointer;
+  color: #777;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.quize-app .submit-button{
+  background-color: #0075FF;
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  color: #FFF;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin:20px auto;
+}
+.quize-app .bullets{
+  border-top: 1px solid #DFDFDF;
+  background-color: #FFF;
+  padding: 20px;
+  display: flex;
+}
+.quize-app .bullets .spans{
+  flex: 1;
+  display: flex;
+}
+.quize-app .bullets .spans span{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-right: 5px;
+}
+.quize-app .bullets .spans span.on{
+  background-color: #0075FF;
+}
+.quize-app .results span{
+  font-weight: bold;
+}
+.quize-app .results span.bad{
+  color: #dc0a0a;
+}
+.quize-app .results span.good{
+  color: #009688;
+}
+.quize-app .results span.perfect{
+  color: #0075FF;
+}
